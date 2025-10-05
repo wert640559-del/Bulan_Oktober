@@ -1,0 +1,20 @@
+.container {
+    background-color: burlywood;
+    color: rgb(61, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+}
+.title {
+    font-weight: 900;
+}
+.judul {
+    font-weight: 900;
+    text-decoration: underline;
+
+}
+.list {
+    list-style: none;
+    padding: 0%;
+    margin-bottom: 10px;
+}
