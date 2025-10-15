@@ -1,0 +1,103 @@
+/* Reset dan base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Light Theme Colors - Bright and Clean */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-container: #ffffff;
+  --text-primary: #333333;
+  --text-secondary: #043915;
+  --text-accent: #4C763B;
+  --accent-primary: #4C763B;
+  --accent-secondary: #B0CE88;
+  --accent-highlight: #FFFD8F;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] {
+  /* Dark Theme Colors - True Dark Mode */
+  --bg-primary: #0a1f0a;
+  --bg-secondary: #05210a;
+  --bg-container: #083015;
+  --text-primary: #FFFD8F;
+  --text-secondary: #B0CE88;
+  --text-accent: #FFFD8F;
+  --accent-primary: #B0CE88;
+  --accent-secondary: #4C763B;
+  --accent-highlight: #4C763B;
+  --border-color: #1a3a1a;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: all 0.3s ease;
+}
+
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+/* Global button styles */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+/* Global input styles */
+input {
+  font-family: inherit;
+  padding: 10px 14px;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: var(--bg-container);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-primary) 20%, transparent);
+}
+
+/* Global list styles */
+ul {
+  list-style: none;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
